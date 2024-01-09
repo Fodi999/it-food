@@ -4,44 +4,25 @@
 </script>
 
 <template>
-  <div class="bg-white max-w-screen-xl mx-auto">
-  <header class="px-0 border-b border-sky-900 flex items-center justify-between h-14">
-        <router-link class=" text-green-600" to="/">
-          <button>
-            <img class="m-2 w-10 h-10 transition-transform hover:scale-150" src="/Ellipse 50.png" alt="logo" />
+<nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
+        <a href="">
+          <router-link class=" text-green-600" to="/">
+            <button>
+            <i class='bx bx-home-alt-2 bx-sm transition-transform hover:scale-150  text-sky-900 '></i>
           </button>
-        </router-link>
-        <h1 class="sm:ml-40  uppercase font-bold text-sky-900 cursor-pointer transition-all hover:scale-150" href="#">IT & Cook</h1>
-        <nav class="hidden md:flex items-center">
+          </router-link>  
+        </a>
+        <h1 class=" sm:ml-40 uppercase font-bold text-sky-900 text-2xl" href="#">IT & Cook</h1>
+        <nav class="md:flex items-center">
           <ul class="text-gray-500 font-semibold inline-flex items-center">
-            <a href="https://www.instagram.com/fodifood" target="_blank" rel="noopener noreferrer">
-          
-          <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bxl-instagram bx-sm  text-orange-600'></i>
-        </a>
-        <a href="https://www.instagram.com/fodifood" target="_blank" rel="noopener noreferrer">
-          <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bxl-facebook-circle bx-sm text-blue-800 '></i>
-        </a>
-          <a href="https://www.instagram.com/fodifood" target="_blank" rel="noopener noreferrer">
-            <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bxl-gmail bx-sm  text-purple-800' ></i>
+          <a class="flex  md:text-left " href="https://www.instagram.com/fodifood" target="_blank" rel="noopener noreferrer">
+            <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bxl-instagram bx-sm  text-sky-900'></i>
           </a>
-          
-
-
-          </ul>
-         
+           </ul>
         </nav>
-        <button class=" inline-block md:hidden">
-          <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bx-menu'></i>
-        </button>
-         </header> 
+        </nav>
         
-        <div>
-          <div class="py-4 overflow-y-auto whitespace-nowrap">
-          
-          
-          </div>
-        </div>
-        <section class=" px-2">
+        <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
             <img class=" h-96  object-cover mr-4" src="/Rectangle 18.png" alt="">
             <div class="sm:flex">
@@ -68,7 +49,7 @@
             </div>
           </a>
         </section>
-        <section class="px-2">
+        <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
             <img class=" h-96  object-cover mr-4" src="/Rectangle 18.png" alt="">
             <div class="lg:flex">
@@ -106,8 +87,8 @@
          
    
    
-      </div>
-      <p class=" mt-14 flex items-center justify-center text-xs  text-sky-900">&copy;2023 FoDifood-Created the design and wrote the website All rights reserved</p>
+      
+      <p class=" mt-14 pb-8 flex items-center justify-center text-xs  text-sky-900">&copy;2023 FoDifood-Created the design and wrote the website All rights reserved</p>
    </template>
 
 
