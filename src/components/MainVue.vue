@@ -32,8 +32,8 @@ export default {
             <div class=" my-4 justify-betveen sm:flex items-center overflow-y-auto whitespace-nowrap" id="app">
               <a class="text-gray-600" href="#"></a>
               <button @click="downloadImage1" class="flex items-center space-x-2 border-2 rounded-full font-bold py-1.5 px-1.5 ml-4  border-sky-900  hover:bg-yellow-300 hover:text-sky-900  transition-all duration-1000" onClick={handleDownload}>
-              <img class="w-8 h-8 cursor-pointer transition-transform hover:scale-110" src="/Ellipse 9.svg" alt="feis" />
-              <span class="px-2 text-xs text-sky-900">{{ $t('buttonDownload') }}</span>
+              <i class='text-sky-900 text-xl   cursor-pointer  transition-transform hover:scale-110 bx bx-cart-download'></i>
+              <span class="px-2  text-xl  text-sky-900">{{ $t('buttonDownload') }}</span>
               </button>
              
              
