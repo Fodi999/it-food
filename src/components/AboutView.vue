@@ -1,31 +1,47 @@
 <script setup>
-
-
+import HomeButton from './HomeButton.vue';
+import HomeHeader from './HomeHeader.vue';
 </script>
 
 <template>
 <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
         <a href="">
-          <router-link class=" text-green-600" to="/">
-            <button>
-            <i class='bx bx-home-alt-2 bx-sm transition-transform hover:scale-150  text-sky-900 '></i>
-          </button>
-          </router-link>  
+          <div>
+            <HomeButton />
+          </div>
+          
+          
+          
         </a>
-        <h1 class=" sm:ml-40 uppercase font-bold text-sky-900 text-2xl" href="#">IT & Cook</h1>
-        <nav class="md:flex items-center">
-          <ul class="text-gray-500 font-semibold inline-flex items-center">
-          <a class="flex  md:text-left " href="https://www.instagram.com/fodifood" target="_blank" rel="noopener noreferrer">
-            <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bxl-instagram bx-sm  text-sky-900'></i>
-          </a>
-           </ul>
-        </nav>
+        
+        <router-link class=" text-green-600" to="/">
+  <button>
+    <h1 class="uppercase font-bold text-sky-900 text-2xl cursor-pointer transition-transform hover:scale-110 " href="#">Sea & food</h1>
+</button>
+        </router-link>
+
+       <HomeHeader />
         </nav>
         
         <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
             <img class=" h-96  object-cover mr-4" src="/Rectangle 18.png" alt="">
             <div class="sm:flex">
+              <div>
+                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
+                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
+                
+               
+
+              </div>
+
+            </div>
+          </a>
+        </section>
+        <section class="flex px-8 pt-4 ">
+          <a class="sm:flex mb-10" href="">
+            <img class=" h-96  object-cover mr-4" src="/Rectangle 12.png" alt="">
+            <div class="lg:flex">
               <div>
                 <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">Dima Fomin IT & Cook</h3>
                 <p class=" text-rose-600 font-semibold mb-2">Why IT Cook ? Because these technologies have long been introduced into our work and the 
@@ -51,7 +67,7 @@
         </section>
         <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 18.png" alt="">
+            <img class=" h-96  object-cover mr-4" src="/Rectangle 102.png" alt="">
             <div class="lg:flex">
               <div>
                 <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">Dima Fomin IT & Cook</h3>
@@ -77,6 +93,7 @@
           </a>
         </section>
         
+        
 
 
          
@@ -92,3 +109,4 @@
    </template>
 
 
+  
