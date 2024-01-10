@@ -3,6 +3,7 @@ import MainVue from '@/components/MainVue.vue';
 import CartVue from '@/components/CartVue.vue';
 import 'boxicons/css/boxicons.min.css'
 import HomeButton from '@/components/HomeButton.vue';
+import HomeHeader from '@/components/HomeHeader.vue';
 defineExpose({
   components: {
     HomeButton,
@@ -22,14 +23,8 @@ defineExpose({
           
           
         </a>
-        <h1 class="uppercase font-bold text-sky-900 text-2xl" href="#">IT & Cook</h1>
-        <nav class="md:flex items-center">
-          <ul class="text-gray-500 font-semibold inline-flex items-center">
-          <a class="flex  md:text-left " href="https://www.instagram.com/fodifood" target="_blank" rel="noopener noreferrer">
-            <i class='cursor-pointer m-2 transition-transform hover:scale-150 bx bxl-instagram bx-sm  text-sky-900'></i>
-          </a>
-           </ul>
-        </nav>
+        <h1 class="uppercase font-bold text-sky-900 text-2xl" href="#">Sea & food</h1>
+       <HomeHeader />
         </nav>
          <MainVue />
          <CartVue />

@@ -18,17 +18,13 @@ export default {
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 18.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Notatki od Szefa Kuchni</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('welcome') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-            Ten blog jest napisany dla tych, którzy chcą rozwijać się w branży gastronomicznej:
-                             Dima Fomin jest szefem kuchni z dużym doświadczeniem w branży spożywczej i kulinarnej. Moja podróż kulinarna trwa już ponad 20 lat.
-                             podczas których pracowałem w różnych krajach i studiowałem liczne technologie tworzenia nowych produktów.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newText') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -36,7 +32,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz 
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -47,16 +43,13 @@ export default {
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 33.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Przepis na Сeviche</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-            Ceviche to pyszne danie kuchni latynoamerykańskiej składające się ze świeżych owoców morza marynowanych w sosie na bazie soku cytrusowego.
-                             W tej wersji używamy przegrzebków i karabinierów, aby stworzyć niezapomniane danie dla gości.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -64,7 +57,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/list">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -75,17 +68,13 @@ export default {
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 14.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Food Business</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-                        This Blog is written for those who want to develop in the Gastronomy Business:
-                        Dmitry Fomin - Chef with extensive experience in the food and culinary industry. My culinary journey spans over 20 years, 
-                        during which I have worked in various countries and immersed myself in numerous technologies for creating new taste experiences.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -93,7 +82,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -104,17 +93,13 @@ export default {
     <img class="absolute left-0 top-0 z-0  " src="/Rectangle 12.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Food Business</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-                        This Blog is written for those who want to develop in the Gastronomy Business:
-                        Dmitry Fomin - Chef with extensive experience in the food and culinary industry. My culinary journey spans over 20 years, 
-                        during which I have worked in various countries and immersed myself in numerous technologies for creating new taste experiences.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -122,7 +107,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -136,17 +121,13 @@ export default {
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 29.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Food Business</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-                        This Blog is written for those who want to develop in the Gastronomy Business:
-                        Dmitry Fomin - Chef with extensive experience in the food and culinary industry. My culinary journey spans over 20 years, 
-                        during which I have worked in various countries and immersed myself in numerous technologies for creating new taste experiences.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -154,7 +135,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -165,16 +146,13 @@ export default {
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 37.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Seviche</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-            Ceviche is an exquisite Latin American dish consisting of fresh seafood marinated in a sauce based on citrus juice. 
-                        In this version we use Scallop and Carabinieri to create a sophisticated dish with exquisite taste and aroma.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -182,7 +160,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz 
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -193,17 +171,13 @@ export default {
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 38.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Food Business</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-                        This Blog is written for those who want to develop in the Gastronomy Business:
-                        Dmitry Fomin - Chef with extensive experience in the food and culinary industry. My culinary journey spans over 20 years, 
-                        during which I have worked in various countries and immersed myself in numerous technologies for creating new taste experiences.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -211,7 +185,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -222,17 +196,13 @@ export default {
     <img class="absolute left-0 top-0 z-0  " src="/Rectangle 39.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">Food Business</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">
-                        This Blog is written for those who want to develop in the Gastronomy Business:
-                        Dmitry Fomin - Chef with extensive experience in the food and culinary industry. My culinary journey spans over 20 years, 
-                        during which I have worked in various countries and immersed myself in numerous technologies for creating new taste experiences.
-                      </h4>
+          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -240,7 +210,7 @@ export default {
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          Otwórz
+                          {{ $t('buttonText') }}
                         </button>
                       </router-link>
         </div>            
