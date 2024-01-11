@@ -1,14 +1,20 @@
-{
+{    
     "buttonDownload": "Pobierz menu",
     "welcome" :"Osobisty Szef kuchni",
     "newText": "Dzięki ponad dwudziestoletniemu doświadczeniu w pracy z owocami morza tworzę wyjątkowe dania, korzystając z własnych receptur. Zamów swoje Danie-online już teraz na mojej stronie internetowej. Zanurz się w świat smaków i aromatów dzięki moim daniom przygotowanym specjalnie dla Ciebie.",
     "buttonText":"Otwórz",
 
-    "newCard":"Zamów Zestaw-Ceviche",
+    "blogTextName":"Przepisy autorskie Dmytro Fomin",
+    "blogTextHeading":"Zamów pyszne owoce morza online z dostawą na terenie całego Gdańska! Ciesz się różnorodnymi daniami przygotowanymi przez doświadczonego szefa kuchni. Ciesz się wyjątkowym smakiem i świeżością przysmaków z owoców morza bez wychodzenia z domu. Zamów już teraz i ciesz się pysznym jedzeniem z dostawą prosto pod Twoje drzwi!",
+
+
+
+
+
+    "newCard":"Zamów zestaw Sushi",
     "newTextCard":"Ceviche to pyszne danie kuchni latynoamerykańskiej składające się ze świeżych owoców morza marynowanych w sosie na bazie soku cytrusowego.W tej wersji używamy przegrzebków i karabinierów, aby stworzyć niezapomniane danie dla gości.",
 
-    "blogTextName":"Przepisy autorskie Dmytro Fomin",
-    "blogTextHeading":"Zamów pyszne owoce morza online z dostawą na terenie całego Gdańska! Ciesz się różnorodnymi daniami przygotowanymi przez doświadczonego szefa kuchni. Ciesz się wyjątkowym smakiem i świeżością przysmaków z owoców morza bez wychodzenia z domu. Zamów już teraz i ciesz się pysznym jedzeniem z dostawą prosto pod Twoje drzwi!"
+    "blogTextNameSushi":"Sashimi"
     
  }
  

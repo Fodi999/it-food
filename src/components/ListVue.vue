@@ -1,10 +1,12 @@
 <script setup>
 import HomeButton from './HomeButton.vue';
 import HomeHeader from './HomeHeader.vue';
+
+
 </script>
 
 <template>
-<nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
+  <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
         <a href="">
           <div>
             <HomeButton />
@@ -25,10 +27,10 @@ import HomeHeader from './HomeHeader.vue';
         
         <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 18.png" alt="">
+            <img class=" h-96  object-cover mr-4" src="/Rectangle 103.png" alt="">
             <div class="sm:flex">
               <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
+                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextNameSushi') }}</h3>
                 <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
                 
                
@@ -40,10 +42,10 @@ import HomeHeader from './HomeHeader.vue';
         </section>
         <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 12.png" alt="">
+            <img class=" h-96  object-cover mr-4" src="/Rectangle 104.png" alt="">
             <div class="sm:flex">
               <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
+                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextNameSushi') }}</h3>
                 <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
                 
                
@@ -55,10 +57,10 @@ import HomeHeader from './HomeHeader.vue';
         </section>
         <section class="flex px-8 pt-4 ">
           <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 102.png" alt="">
+            <img class=" h-96  object-cover mr-4" src="/Rectangle 105.png" alt="">
             <div class="sm:flex">
               <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
+                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextNameSushi') }}</h3>
                 <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
                 
                
@@ -83,8 +85,7 @@ import HomeHeader from './HomeHeader.vue';
    
    
       
-      <p class=" mt-14 pb-8 flex items-center justify-center text-xs  text-sky-900">&copy;2023 FoDifood-Created the design and wrote the website All rights reserved</p>
+      <p class=" mt-14 pb-8 flex items-center justify-center text-xs  text-sky-900">&copy;2023 FoDifood-Created the design and wrote the website All rights reserved</p> 
    </template>
 
 
-  
