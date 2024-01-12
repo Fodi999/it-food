@@ -92,7 +92,7 @@ const isOpen = (day) => {
             <template v-for="(value, index) in (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1)" :key="index">
     <div class="w-8 h-8"></div>
 </template>
-            <button class="border-2  border-black bg-white rounded-full w-8 h-8 flex items-center justify-center" v-for="(day,) in daysInMonth" :key="day" 
+            <button class="border-2  border-black rounded-full w-8 h-8 flex items-center justify-center" v-for="(day,) in daysInMonth" :key="day" 
                     :class="isOpen(day) ? ' text-yellow-200 bg-green-600 rounded-full w-8 h-8 flex items-center justify-center' : 'bg-red-500 text-black rounded-full w-8 h-8 flex items-center justify-center'">
                 {{ day }}
             </button>
