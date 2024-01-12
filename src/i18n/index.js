@@ -13,5 +13,6 @@ const i18n = createI18n({
     ua: ua
     // добавьте здесь другие языки
   }
+  
 })
 export default i18n
