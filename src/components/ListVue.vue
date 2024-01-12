@@ -24,52 +24,72 @@ import HomeHeader from './HomeHeader.vue';
 
        <HomeHeader />
         </nav>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10">
+          <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
+     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 103.png" alt="Изображение товара">
+      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
+      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
+      <div class=" flex justify-between">
+        <div class=" flex flex-col justify-end h-full">
+          <span class=" text-red-500 ">Цена</span>
+          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+         Купить
+        </button>
+        </div>
         
-        <section class="flex px-8 pt-4 ">
-          <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 103.png" alt="">
-            <div class="sm:flex">
-              <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextNameSushi') }}</h3>
-                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-                
-               
+    </div>
+  </div>
+  <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
+     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 104.png" alt="Изображение товара">
+      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
+      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
+      <div class=" flex justify-between">
+        <div class=" flex flex-col justify-end h-full">
+          <span class=" text-red-500 ">Цена</span>
+          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+         Купить
+        </button>
+        </div>
+        
+    </div>
+  </div>
+  <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
+     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 105.png" alt="Изображение товара">
+      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
+      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
+      <div class=" flex justify-between">
+        <div class=" flex flex-col justify-end h-full">
+          <span class=" text-red-500 ">Цена</span>
+          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+         Купить
+        </button>
+        </div>
+        
+    </div>
+  </div>
+  <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
+     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 104.png" alt="Изображение товара">
+      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
+      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
+      <div class=" flex justify-between">
+        <div class=" flex flex-col justify-end h-full">
+          <span class=" text-red-500 ">Цена</span>
+          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+         Купить
+        </button>
+        </div>
+        
+    </div>
+  </div>
 
-              </div>
-
-            </div>
-          </a>
-        </section>
-        <section class="flex px-8 pt-4 ">
-          <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 104.png" alt="">
-            <div class="sm:flex">
-              <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextNameSushi') }}</h3>
-                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-                
-               
-
-              </div>
-
-            </div>
-          </a>
-        </section>
-        <section class="flex px-8 pt-4 ">
-          <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 105.png" alt="">
-            <div class="sm:flex">
-              <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextNameSushi') }}</h3>
-                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-                
-               
-
-              </div>
-
-            </div>
-          </a>
-        </section>
+        </div>
+        
+       
+      
         
       
         
