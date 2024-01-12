@@ -39,7 +39,7 @@ export default {
               <router-link to="/calendar">
                 <button class="flex items-center space-x-2 border-2 rounded-full font-bold py-1.5 px-1.5 ml-4 mt-2  border-sky-900  hover:bg-yellow-300 hover:text-sky-900  transition-all duration-1000">
                 <i class='text-sky-900 text-xl   cursor-pointer  transition-transform hover:scale-110 bx bx-calendar'></i>
-              <span class="px-2  text-xl  text-sky-900">{{ $t('buttonDownload') }}</span>
+              <span class="px-2  text-xl  text-sky-900">{{ $t('buttonDownload2') }}</span>
               </button>
 </router-link>
              
