@@ -18,8 +18,8 @@ defineExpose({
 </script>
 
 <template>
-  
-  <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
+  <div>
+    <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
         <a href="">
           <div>
             <HomeButton />
@@ -29,9 +29,10 @@ defineExpose({
           
           
         </a>
-        <h1 class="uppercase font-bold text-sky-900 text-2xl" href="#">Sea & food</h1>
+        <h1 class="uppercase font-bold mx-auto text-sky-900 text-2xl" href="#">Sea & food</h1>
        <HomeHeader />
         </nav>
+        
          <MainVue />
          <CartVue />
           
@@ -45,4 +46,7 @@ defineExpose({
 
          
 
+  </div>
+  
+  
 </template>

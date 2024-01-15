@@ -8,9 +8,12 @@
     
 
     <router-view v-slot="{ Component }">
-      <transition name="fade">
+      <div>
+        <transition name="fade">
         <component :is="Component" />
       </transition>
+      </div>
+     
     </router-view>
   </div>
 </template>
