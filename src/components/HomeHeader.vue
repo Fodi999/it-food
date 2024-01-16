@@ -48,7 +48,7 @@ export default {
            </ul>
         </nav>
         <button class="fixed right-0 top-0 inline-block md:hidden" @click="toggleDropDowen">
-  <i class='pt-5 pr-5 z-0 bx bx-menu'></i>
+  <i class='text-2xl text-sky-900 pt-5 pr-5 z-0 bx bx-menu'></i>
 </button>
         <div>
     <div v-if="isDropDowenViseble" class="absolute bg-white rounded-lg shadow-lg p-4 mt-2">

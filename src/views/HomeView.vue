@@ -29,7 +29,8 @@ defineExpose({
           
           
         </a>
-        <h1 class="uppercase font-bold mx-auto text-sky-900 text-2xl" href="#">Sea & food</h1>
+        
+        <h1 class=" uppercase font-bold mx-auto  text-center text-sky-900 text-2xl" href="#">Sea & food</h1>
        <HomeHeader />
         </nav>
         
