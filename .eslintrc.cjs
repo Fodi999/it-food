@@ -10,5 +10,8 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  globals: {
+    FB: 'readonly' // добавьте эту строку
   }
 }
