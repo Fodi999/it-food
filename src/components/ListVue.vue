@@ -1,8 +1,20 @@
 <script setup>
 import HomeButton from './HomeButton.vue';
 import HomeHeader from './HomeHeader.vue';
+import html2canvas from 'html2canvas';
 
+const downloadCard = (event) => {
+  event.preventDefault();
+  let element = document.querySelector('.bg-white.rounded-lg.shadow.p-4'); // замените на селектор элемента, который вы хотите скачать
 
+  html2canvas(element).then(canvas => {
+    let imgData = canvas.toDataURL('image/png');
+    let link = document.createElement('a');
+    link.href = imgData;
+    link.download = 'product-card.png';
+    link.click();
+  });
+};
 </script>
 
 <template>
@@ -25,36 +37,7 @@ import HomeHeader from './HomeHeader.vue';
        <HomeHeader />
         </nav>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10">
-          <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
-     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 103.png" alt="Изображение товара">
-      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
-      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
-      <div class=" flex justify-between">
-        <div class=" flex flex-col justify-end h-full">
-          <span class=" text-red-500 ">Цена</span>
-          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
-         Купить
-        </button>
-        </div>
-        
-    </div>
-  </div>
-  <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
-     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 104.png" alt="Изображение товара">
-      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
-      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
-      <div class=" flex justify-between">
-        <div class=" flex flex-col justify-end h-full">
-          <span class=" text-red-500 ">Цена</span>
-          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
-         Купить
-        </button>
-        </div>
-        
-    </div>
-  </div>
+         
   <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
      <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 105.png" alt="Изображение товара">
       <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
@@ -63,9 +46,28 @@ import HomeHeader from './HomeHeader.vue';
         <div class=" flex flex-col justify-end h-full">
           <span class=" text-red-500 ">Цена</span>
           <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
-         Купить
-        </button>
+          <a :href="'https://m.me/102194024947729'" target="_blank">
+  <button @click="downloadCard" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+    Купить
+  </button>
+</a>
+        </div>
+        
+    </div>
+  </div>
+  <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
+     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 103.png" alt="Изображение товара">
+      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
+      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
+      <div class=" flex justify-between">
+        <div class=" flex flex-col justify-end h-full">
+          <span class=" text-red-500 ">Цена</span>
+          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
+          <a :href="'https://m.me/102194024947729'" target="_blank">
+  <button @click="downloadCard" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+    Купить
+  </button>
+</a>
         </div>
         
     </div>
@@ -78,13 +80,33 @@ import HomeHeader from './HomeHeader.vue';
         <div class=" flex flex-col justify-end h-full">
           <span class=" text-red-500 ">Цена</span>
           <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
-         Купить
-        </button>
+          <a :href="'https://m.me/102194024947729'" target="_blank">
+  <button @click="downloadCard" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+    Купить
+  </button>
+</a>
         </div>
         
     </div>
   </div>
+  <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">
+     <img class="  h-56  w-full rounded-xl object-cover" src="/public/Rectangle 101.png" alt="Изображение товара">
+      <p class="block mt-4 text-lg leading-tight font-medium text-sky-900 ">{{ $t('blogTextNameSushi') }}</p>
+      <p class="text-sm font-bold text-sky-900 ">{{ $t('blogTextHeading') }}</p>
+      <div class=" flex justify-between">
+        <div class=" flex flex-col justify-end h-full">
+          <span class=" text-red-500 ">Цена</span>
+          <p class=" text-gray-500 text-lg font-bold ">Цена: $100</p>
+          <a :href="'https://m.me/102194024947729'" target="_blank">
+  <button @click="downloadCard" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-52 m-4 transition hover:-translate-y-2 hover:shadow-xl">
+    Купить
+  </button>
+</a>
+        </div>
+        
+    </div>
+  </div>
+  
 
         </div>
         
