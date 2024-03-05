@@ -1,8 +1,6 @@
 <script setup>
-import HomeButton from './HomeButton.vue';
-import HomeHeader from './HomeHeader.vue';
 import html2canvas from 'html2canvas';
-import OrderButton from './OrderButton.vue';
+
 
 const downloadCard = (event) => {
   event.preventDefault();
@@ -19,30 +17,7 @@ const downloadCard = (event) => {
 </script>
 
 <template>
-  <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
-        <a href="">
-          <div>
-            <HomeButton />
-            
-            
-          </div>
-          
-          
-          
-        </a>
-        
-        <router-link class=" text-green-600" to="/">
-          <div>
-  <button class="uppercase font-bold text-sky-900 text-2xl cursor-pointer transition-transform hover:scale-110">
-    Sea & food
-  </button>
-</div>
- 
-        </router-link>
-
-       <HomeHeader />
-       <OrderButton />
-        </nav>
+  
         
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10">

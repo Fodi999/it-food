@@ -31,6 +31,36 @@ import HomeHeader from './HomeHeader.vue';
               <div>
                 <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
                 <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
+                <table class="table-auto w-full mt-4">
+  <caption class="text-center py-2 font-bold">Название продукта</caption>
+  <thead>
+    <tr>
+      <th class="px-2 sm:px-4 py-2 border">Ингредиент</th>
+      <th class="px-2 sm:px-4 py-2 border">Граммы</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-2 sm:px-4 py-2">Ингредиент 1</td>
+      <td class="border px-2 sm:px-4 py-2">100 г</td>
+    </tr>
+    <tr>
+      <td class="border px-2 sm:px-4 py-2">Ингредиент 2</td>
+      <td class="border px-2 sm:px-4 py-2">200 г</td>
+    </tr>
+    <!-- Добавьте больше строк по мере необходимости -->
+  </tbody>
+  <tfoot>
+    <tr>
+      <th class="px-2 sm:px-4 py-2 border">Вес выходного продукта</th>
+      <td class="px-2 sm:px-4 py-2 border font-semibold">300 г</td>
+    </tr>
+    <a href="url_to_your_png_file.png" download class="px-4 py-2  bg-blue-500 text-white rounded hover:bg-blue-700">
+  Скачать PNG
+</a>
+  </tfoot>
+</table>
+
                 
                
 

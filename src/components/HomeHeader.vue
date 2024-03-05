@@ -3,6 +3,9 @@ import { useI18n } from 'vue-i18n'
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
+  props: {
+    cartItems: Array, // Или другой тип, в зависимости от того, что вы ожидаете
+  },
   setup() {
     const { locale } = useI18n()
 
