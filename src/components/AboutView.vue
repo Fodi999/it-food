@@ -7,16 +7,17 @@ const open = ref(false);
 
 <template>
   <div>
-   
-        <div class="overflow-x-auto">
-      <div class="min-w-screen min-h-screen flex items-center justify-center  font-sans overflow-hidden">
-        <div class="w-full lg:w-5/6 mt-[-100px]">
-          <div class="flex flex-col sm:flex-row mb-10 ml-4">
-            <img class=" sm:h-96 object-cover mr-4 sm:mr-4 " src="/Rectangle 18.png" alt="">
-            <div class="mr-4 ">
-              <h3 class=" border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
-              <p class="text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-       <div class="w-full max-w-sm me-auto bg-sky-800 p-1  rounded-lg shadow-md">
+    <div class="flex flex-wrap">
+      <!-- Изображение -->
+      <div class="sm:w-1/4 p-4 w-full">
+        <img class="object-cover w-full h-full" src="/Rectangle 18.png" alt="">
+      </div>
+
+      <!-- Текст -->
+      <div class="sm:w-1/3 p-4 w-full">
+        <h3 class="border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
+        <p class="text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
+        <div class="w-full max-w-sm me-auto bg-sky-800 p-1  rounded-lg shadow-md">
 <div @click="open = !open" class="w-full bg-blue-500 text-white font-bold text-sm text-center p-2 cursor-pointer rounded-lg">
 Процесс приготовления
 </div>
@@ -26,21 +27,19 @@ const open = ref(false);
 <p class="text-left text-sm my-2">3- маринуем</p>
 <p class="text-left text-sm my-2">4- вялим 14 дней</p>
 <p class="text-left text-sm my-2">5- усушка 200 г. с 1 кг.</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            
-            </div>
-            </div> 
-            
 
-            
+
+
+
             </div>
-            <div class="flex justify-center sm:mx-4" >
-              
-            <table class="max-w-md max-h-md sm:w-full table-auto">
-         
+           
+            </div>
+
+      </div>
+
+      <!-- Таблица -->
+      <div class="sm:w-1/3 p-4 w-full overflow-auto">
+        <table class="w-full table-auto text-xs sm:text-sm">
          <thead>
            <tr class="bg-gray-200 text-gray-600 uppercase text-xs leading-normal">
              <th class="py-3 px-6 text-left">Ингредиент</th>
@@ -98,10 +97,17 @@ const open = ref(false);
              <td class="py-3 px-6 text-center">-----</td>
              <td class="py-3 px-6 text-center font-semibold">0,800</td>
            </tr>
-           <!-- Добавьте больше строк по мере необходимости -->
+
          </tbody>
-       </table>
-       </div>
+        </table>
+      </div>
+    </div>
+    </div>
+            
+
+            
+            
+           
 
             
 
@@ -110,7 +116,7 @@ const open = ref(false);
    
       
       <p class=" mt-14 pb-8 flex items-center justify-center text-xs  text-sky-900">&copy;2023 FoDifood-Created the design and wrote the website All rights reserved</p>
-  </div>
+
 
    </template>
 
