@@ -2,6 +2,7 @@
 import html2canvas from 'html2canvas';
 
 
+
 const downloadCard = (event) => {
   event.preventDefault();
   let element = event.currentTarget.closest('.bg-white.rounded-lg.shadow.p-4'); // получаем ближайший родительский элемент карточки
@@ -17,6 +18,8 @@ const downloadCard = (event) => {
 </script>
 
 <template>
+   <div>
+    
   
         
         
@@ -87,7 +90,7 @@ const downloadCard = (event) => {
   </button>
 
         </div>
-        
+        </div>
     </div>
   </div>
   

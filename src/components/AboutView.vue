@@ -1,172 +1,109 @@
 <script setup>
-import HomeButton from './HomeButton.vue';
-import HomeHeader from './HomeHeader.vue';
+import { ref } from 'vue';
+
+
+const open = ref(false);
 </script>
 
 <template>
   <div>
-    <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
-        <a href="">
-          <div>
-            <HomeButton />
-          </div>
-          
-          
-          
-        </a>
-        
-        <router-link class=" text-green-600" to="/">
-  <button>
-    <h1 class="uppercase font-bold text-sky-900 text-2xl cursor-pointer transition-transform hover:scale-110 " href="#">Sea & food</h1>
-</button>
-        </router-link>
-
-       <HomeHeader />
-        </nav>
-        
-        <section class="flex px-8 pt-4 ">
-          <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 18.png" alt="">
-            <div class="sm:flex">
-              <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
-                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-                <table class="table-auto w-full mt-4">
-  <caption class="text-center py-2 font-bold">Название продукта</caption>
-  <thead>
-    <tr>
-      <th class="px-2 sm:px-4 py-2 border">Ингредиент</th>
-      <th class="px-2 sm:px-4 py-2 border">Граммы</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border px-2 sm:px-4 py-2">Рыба</td>
-      <td class="border px-2 sm:px-4 py-2">100 г</td>
-    </tr>
-    <tr>
-      <td class="border px-2 sm:px-4 py-2">Гарнир</td>
-      <td class="border px-2 sm:px-4 py-2">200 г</td>
-    </tr>
-    <!-- Добавьте больше строк по мере необходимости -->
-  </tbody>
-  <tfoot>
-    <tr>
-      <th class="px-2 sm:px-4 py-2 border">Выход: Продукта</th>
-      <td class="px-2 sm:px-4 py-2 border font-semibold">300 г</td>
-    </tr>
-    <a href="url_to_your_png_file.png" download class="px-4 py-2 mt-4  bg-blue-500 text-white rounded hover:bg-blue-700">
-  Скачать PNG
-</a>
-  </tfoot>
-</table>
-
-                
-               
-
-              </div>
-
-            </div>
-          </a>
-        </section>
-        <section class="flex px-8 pt-4 ">
-          <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 12.png" alt="">
-            <div class="sm:flex">
-              <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
-                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-                <table class="table-auto w-full mt-4">
-  <caption class="text-center py-2 font-bold">Название продукта</caption>
-  <thead>
-    <tr>
-      <th class="px-2 sm:px-4 py-2 border">Ингредиент</th>
-      <th class="px-2 sm:px-4 py-2 border">Граммы</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border px-2 sm:px-4 py-2">Рыба</td>
-      <td class="border px-2 sm:px-4 py-2">100 г</td>
-    </tr>
-    <tr>
-      <td class="border px-2 sm:px-4 py-2">Гарнир</td>
-      <td class="border px-2 sm:px-4 py-2">200 г</td>
-    </tr>
-    <!-- Добавьте больше строк по мере необходимости -->
-  </tbody>
-  <tfoot>
-    <tr>
-      <th class="px-2 sm:px-4 py-2 border">Выход: Продукта</th>
-      <td class="px-2 sm:px-4 py-2 border font-semibold">300 г</td>
-    </tr>
-    <a href="url_to_your_png_file.png" download class="px-4 py-2 mt-4  bg-blue-500 text-white rounded hover:bg-blue-700">
-  Скачать PNG
-</a>
-  </tfoot>
-</table>
-                
-               
-
-              </div>
-
-            </div>
-          </a>
-        </section>
-        <section class="flex px-8 pt-4 ">
-          <a class="sm:flex mb-10" href="">
-            <img class=" h-96  object-cover mr-4" src="/Rectangle 102.png" alt="">
-            <div class="sm:flex">
-              <div>
-                <h3 class=" mt-2 mb-2 border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
-                <p class=" text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-                <table class="table-auto w-full mt-4">
-  <caption class="text-center py-2 font-bold">Название продукта</caption>
-  <thead>
-    <tr>
-      <th class="px-2 sm:px-4 py-2 border">Ингредиент</th>
-      <th class="px-2 sm:px-4 py-2 border">Граммы</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border px-2 sm:px-4 py-2">Рыба</td>
-      <td class="border px-2 sm:px-4 py-2">100 г</td>
-    </tr>
-    <tr>
-      <td class="border px-2 sm:px-4 py-2">Гарнир</td>
-      <td class="border px-2 sm:px-4 py-2">200 г</td>
-    </tr>
-    <!-- Добавьте больше строк по мере необходимости -->
-  </tbody>
-  <tfoot>
-    <tr>
-      <th class="px-2 sm:px-4 py-2 border">Выход: Продукта</th>
-      <td class="px-2 sm:px-4 py-2 border font-semibold">300 г</td>
-    </tr>
-    <a href="url_to_your_png_file.png" download class="px-4 py-2 mt-4  bg-blue-500 text-white rounded hover:bg-blue-700">
-  Скачать PNG
-</a>
-  </tfoot>
-</table>
-                
-               
-
-              </div>
-
-            </div>
-          </a>
-        </section>
-        
-      
-        
-        
-
-
-         
    
-        
+        <div class="overflow-x-auto">
+      <div class="min-w-screen min-h-screen flex items-center justify-center  font-sans overflow-hidden">
+        <div class="w-full lg:w-5/6 mt-[-100px]">
+          <div class="flex flex-col sm:flex-row mb-10 ml-4">
+            <img class=" sm:h-96 object-cover mr-4 sm:mr-4 " src="/Rectangle 18.png" alt="">
+            <div class="mr-4 ">
+              <h3 class=" border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
+              <p class="text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
+       <div class="w-full max-w-sm me-auto bg-sky-800 p-1  rounded-lg shadow-md">
+<div @click="open = !open" class="w-full bg-blue-500 text-white font-bold text-sm text-center p-2 cursor-pointer rounded-lg">
+Процесс приготовления
+</div>
+<div v-if="open" class="w-full border border-t-0 p-4  bg-white mt-2 rounded-lg">
+<p class="text-left text-sm my-2">1-Время засолки 48 часов</p>
+<p class="text-left text-sm my-2">2- вымачиваем 6 часов в холодной воде</p>
+<p class="text-left text-sm my-2">3- маринуем</p>
+<p class="text-left text-sm my-2">4- вялим 14 дней</p>
+<p class="text-left text-sm my-2">5- усушка 200 г. с 1 кг.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            </div>
+            </div> 
+            
 
+            
+            </div>
+            <div class="flex justify-center sm:mx-4" >
+              
+            <table class="max-w-md max-h-md sm:w-full table-auto">
+         
+         <thead>
+           <tr class="bg-gray-200 text-gray-600 uppercase text-xs leading-normal">
+             <th class="py-3 px-6 text-left">Ингредиент</th>
+             <th class="py-3 px-6 text-left">Мера Измерения</th>
+             <th class="py-3 px-6 text-center">Брута</th>
+             <th class="py-3 px-6 text-center">Нетто</th>
+           </tr>
+         </thead>
+         <tbody class="text-gray-600 text-xs font-light">
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left whitespace-nowrap">Филе осетра без шкуры</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">1,000</td>
+             <td class="py-3 px-6 text-center">0,800</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left">Соль</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">0,150</td>
+             <td class="py-3 px-6 text-center">-----</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left">Лимонный перец</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">0,005</td>
+             <td class="py-3 px-6 text-center">-----</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left">Кайенский перец</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">0,005</td>
+             <td class="py-3 px-6 text-center">-----</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left">Пожитник молотый</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">0,005</td>
+             <td class="py-3 px-6 text-center">-----</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left">Кимчи соус</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">0,060</td>
+             <td class="py-3 px-6 text-center">-----</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left">Растительное масло</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">0,060</td>
+             <td class="py-3 px-6 text-center">-----</td>
+           </tr>
+           <tr class="border-b border-gray-200 hover:bg-gray-100">
+             <td class="py-3 px-6 text-left font-semibold">Выход :</td>
+             <td class="py-3 px-6 ps-20 text-left">г</td>
+             <td class="py-3 px-6 text-center">-----</td>
+             <td class="py-3 px-6 text-center font-semibold">0,800</td>
+           </tr>
+           <!-- Добавьте больше строк по мере необходимости -->
+         </tbody>
+       </table>
+       </div>
+
+            
 
          
    

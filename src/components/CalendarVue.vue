@@ -1,7 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue';
-import HomeButton from '@/components/HomeButton.vue';
-import HomeHeader from '@/components/HomeHeader.vue';
+
 
 const date = new Date();
 const currentMonthIndex = ref(date.getMonth());
@@ -55,23 +54,7 @@ const currentDate = ref(new Date().toLocaleDateString());
 const tasks = ref(['Суши из лосося ', 'Сашими из Тунца', 'Суши Бокс Микс','Суши Бокс Микс']);
 </script>
 <template>
-    <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
-        <a href="">
-          <div>
-            <HomeButton />
-          </div>
-          
-          
-          
-        </a>
-        <router-link class=" text-green-600" to="/">
-  <button>
-    <h1 class="uppercase font-bold text-sky-900 text-2xl cursor-pointer transition-transform hover:scale-110 " href="#">Sea & food</h1>
-</button>
-        </router-link>
-        
-       <HomeHeader />
-        </nav>
+   
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10">
   
     <div class="bg-white rounded-lg shadow p-4 cursor-pointer transition hover:-translate-y-2 hover:shadow-xl">

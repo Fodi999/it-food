@@ -4,7 +4,7 @@ import CartVue from '@/components/CartVue.vue';
 import 'boxicons/css/boxicons.min.css'
 import HomeButton from '@/components/HomeButton.vue';
 import HomeHeader from '@/components/HomeHeader.vue';
-import OrderButton from '@/components/OrderButton.vue';
+
 
 defineExpose({
   components: {
@@ -12,27 +12,27 @@ defineExpose({
     CartVue,
     HomeButton,
     HomeHeader,
-    OrderButton
+    
   },
 });
 </script>
 
 <template>
   <div>
-    <nav class=" z-30 sticky top-0 left-0 w-full  border-b-4 border-sky-900  bg-white flex justify-between items-center py-3 px-5">
-        <a href="">
+    
+        
           <div>
             <HomeButton />
           </div>
-          <OrderButton />
           
           
           
-        </a>
+          
+      
         
-        <h1 class=" uppercase font-bold mx-auto  text-center text-sky-900 text-2xl" href="#">Sea & food</h1>
-       <HomeHeader />
-        </nav>
+        
+       
+        
         
          <MainVue />
          <CartVue />
