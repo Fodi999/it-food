@@ -7,10 +7,10 @@ const open = ref(false);
 
 <template>
   <div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap ">
       <!-- Изображение -->
       <div class="sm:w-1/4 p-4 w-full">
-        <img class="object-cover w-full h-full" src="/Rectangle 18.png" alt="">
+        <img class="object-cover w-full h-full" src="/Rectangle 100.png" alt="">
       </div>
 
       <!-- Текст -->
@@ -103,9 +103,11 @@ const open = ref(false);
       </div>
     </div>
     </div>
-            
+    <div class="sm:w-1/3 p-4 w-full rounded flex justify-center items-center m-auto">
+  <iframe class="w-full h-64 sm:h-96 rounded" src="https://www.youtube.com/embed/cCAbd50y1OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>      
 
-            
+        
             
            
 

@@ -12,6 +12,9 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   globals: {
-    FB: 'readonly' // добавьте эту строку
+    FB: 'readonly', // добавьте эту строку
+    __VUE_OPTIONS_API__: 'readonly',
+    __VUE_PROD_DEVTOOLS__: 'readonly',
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'readonly'
   }
 }

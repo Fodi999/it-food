@@ -15,7 +15,7 @@ export default {
 <section class=" px-2 lg:flex lg:space-x-2">
   <a class=" w-full lg:w-2/3  bg-gradient-to-tr h-96 mb-4 relative rounded inline-block overflow-hidden"  href="">
     <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10  to-black/60"></div>
-    <img class="absolute left-0 top-0 z-0 " src="/Rectangle 18.png" alt="">
+    <img class="absolute left-0 top-0 z-0 " src="/Rectangle 100.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
       <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('welcome') }}</h2>
