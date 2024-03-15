@@ -100,6 +100,14 @@ const open = ref(false);
 
          </tbody>
         </table>
+        <div class="sm:w-1/3 p-4 w-full overflow-auto">
+  <table class="w-full table-auto text-xs sm:text-sm">
+    <!-- Ваша таблица -->
+  </table>
+  <div class="sm:hidden md:hidden text-center text-sm text-gray-500 mt-2">
+    <i class='bx bx-arrow-to-left' style='color:#ff0000'  ></i><i class='bx bx-arrow-to-right' style='color:#ff0000'  ></i>
+  </div>
+</div>
       </div>
     </div>
     </div>

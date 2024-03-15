@@ -22,7 +22,7 @@ import HomeHeader from './components/HomeHeader.vue';
       <HomeHeader />
     </nav>
     <div>
-      <OrderButton />
+      
     </div>
   </div>
   <div class="flex flex-col h-screen justify-between">
