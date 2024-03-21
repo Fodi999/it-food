@@ -1,8 +1,19 @@
 <script setup>
 import { ref } from 'vue';
 
-
+const isTableVisible = ref(false);
+const password = ref('');
+const correctPassword = '210185'; // замените на ваш паро
+const isPasswordIncorrect = ref(false);
 const open = ref(false);
+const checkPassword = () => {
+  if (password.value === correctPassword) {
+    isTableVisible.value = !isTableVisible.value;
+    isPasswordIncorrect.value = false;
+  } else {
+    isPasswordIncorrect.value = true;
+  }
+};
 </script>
 
 <template>
@@ -39,7 +50,12 @@ const open = ref(false);
 
       <!-- Таблица -->
       <div class="sm:w-1/3 p-4 w-full overflow-auto">
-        <table class="w-full table-auto text-xs sm:text-sm">
+        <input v-model="password" type="password" placeholder="Введите пароль" class="border-2 border-red-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-red-700">
+        <button @click="checkPassword" class="bg-red-500 mt-4 mb-2 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+  {{ isTableVisible ? 'Скрыть таблицу' : 'Показать таблицу' }}
+</button>
+<p v-if="isPasswordIncorrect" class="text-red-500 mt-2 mb-2 text-sm border-b p-2 rounded">Пароль введен неправильно</p>
+        <table v-show="isTableVisible"  class="w-full table-auto text-xs sm:text-sm">
          <thead>
            <tr class="bg-gray-200 text-gray-600 uppercase text-xs leading-normal">
              <th class="py-3 px-6 text-left">Ингредиент</th>

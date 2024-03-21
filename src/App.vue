@@ -29,7 +29,9 @@ import HomeHeader from './components/HomeHeader.vue';
     <router-view v-slot="{ Component }">
       <div class="flex-grow">
         <transition name="fade">
-          <component :is="Component" />
+          <div v-if="Component"> 
+            <component :is="Component" />
+          </div> 
         </transition>
       </div>
     </router-view>
