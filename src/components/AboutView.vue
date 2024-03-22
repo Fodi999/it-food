@@ -33,7 +33,7 @@ const checkPassword = () => {
       </div>
 
       <!-- Таблица -->
-      <div class="sm:w-1/3 p-4 w-full overflow-auto">
+      <div class=" sm:w-1/3 p-4 w-full overflow-auto">
         <input v-model="password" type="password" placeholder="Введите пароль" class="border-2 border-red-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-red-700">
         <button @click="checkPassword" class="bg-red-500 mt-4 mb-2 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
   {{ isTableVisible ? 'Скрыть таблицу' : 'Показать таблицу' }}
@@ -97,23 +97,36 @@ const checkPassword = () => {
              <td class="py-3 px-6 ps-20 text-left">г</td>
              <td class="py-3 px-6 text-center">-----</td>
              <td class="py-3 px-6 text-center font-semibold">0,800</td>
-             
+          
            </tr>
-           <tr>
-           <td class="font-bold">Филе Осетра без Шкуры разрезать на куски как на видио 
-           <div class="font-semibold text-red-600">Маринуем куски осетра в маринаде как написано в Рецепте , 
-            Связываем шпагатом и подвешиваем на кручки в холодильник .
-            Вялим 48 часов при температуре +4 градуса.
-            Усушка 10% . Продукта .
-           </div></td>
-           </tr>
+           <div class="border-b border-gray-200 hover:bg-gray-100">
+  <div class="text-nowrap py-3 px-6 text-sm font-semibold ">
+    <p class="text-red-500 font-bold">Технология приготовоения.</p>
+    Филе Осетра без Шкуры разрезать на куски как на видио.
+    <p>Маринуем куски осетра в маринаде как написано в Рецепте.</p>
+    <p>Связываем шпагатом и подвешиваем на кручки в холодильник.</p>
+    <p>Вялим 48 часов при температуре +4 градуса.</p>
+    <p>Усушка 10%.</p>
+    <p>Продукта.</p>
+  </div>
+</div>
+           
+       
+          
+          
+           
+           
          </tbody>
+
+ 
         </table>
+
+        
         <div class="sm:w-1/3 p-4 w-full overflow-auto">
   <table class="w-full table-auto text-xs sm:text-sm">
     <!-- Ваша таблица -->
   </table>
-  <div class="sm:hidden md:hidden text-center text-sm text-gray-500 mt-2">
+  <div class="sm:hidden md:hidden text-center text-xl text-gray-500 mt-2">
     <i class='bx bx-arrow-to-left' style='color:#ff0000'  ></i><i class='bx bx-arrow-to-right' style='color:#ff0000'  ></i>
   </div>
 </div>
