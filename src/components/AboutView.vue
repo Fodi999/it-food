@@ -100,7 +100,7 @@ const checkPassword = () => {
           
            </tr>
            <div class="border-b border-gray-200 hover:bg-gray-100">
-  <div class="text-nowrap py-3 px-6 text-sm font-semibold ">
+  <div class="py-3 text-nowrap px-2 sm:px-6 text-xs sm:text-sm font-semibold">
     <p class="text-red-500 font-bold">Технология приготовоения.</p>
     Филе Осетра без Шкуры разрезать на куски как на видио.
     <p>Маринуем куски осетра в маринаде как написано в Рецепте.</p>
