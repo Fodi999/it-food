@@ -10,6 +10,7 @@ const router = createRouter({
     {path: '/calendar',name: 'calendar',component: () => import('../components/CalendarVue.vue')},
     {path: '/drawer',name: 'drawer',component: () => import('../components/DrawerVue.vue')},
     {path: '/itcook',name: 'itcook',component: () => import('../components/ITcook.vue')},
+    {path: '/donate',name: 'donate',component: () => import('../components/DonateVue.vue')},
   ]
 })
 
