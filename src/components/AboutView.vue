@@ -5,7 +5,7 @@ const isTableVisible = ref(false);
 const password = ref('');
 const correctPassword = '210185'; // замените на ваш паро
 const isPasswordIncorrect = ref(false);
-const open = ref(false);
+
 const checkPassword = () => {
   if (password.value === correctPassword) {
     isTableVisible.value = !isTableVisible.value;
@@ -15,7 +15,6 @@ const checkPassword = () => {
   }
 };
 </script>
-
 <template>
   <div>
     <div class="flex flex-wrap ">
@@ -28,23 +27,8 @@ const checkPassword = () => {
       <div class="sm:w-1/3 p-4 w-full">
         <h3 class="border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
         <p class="text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
-        <div class="w-full max-w-sm me-auto bg-sky-800 p-1  rounded-lg shadow-md">
-<div @click="open = !open" class="w-full bg-blue-500 text-white font-bold text-sm text-center p-2 cursor-pointer rounded-lg">
-Процесс приготовления
-</div>
-<div v-if="open" class="w-full border border-t-0 p-4  bg-white mt-2 rounded-lg">
-<p class="text-left text-sm my-2">1-Время засолки 48 часов</p>
-<p class="text-left text-sm my-2">2- вымачиваем 6 часов в холодной воде</p>
-<p class="text-left text-sm my-2">3- маринуем</p>
-<p class="text-left text-sm my-2">4- вялим 14 дней</p>
-<p class="text-left text-sm my-2">5- усушка 200 г. с 1 кг.</p>
+      
 
-
-
-
-            </div>
-           
-            </div>
 
       </div>
 
@@ -55,6 +39,7 @@ const checkPassword = () => {
   {{ isTableVisible ? 'Скрыть таблицу' : 'Показать таблицу' }}
 </button>
 <p v-if="isPasswordIncorrect" class="text-red-500 mt-2 mb-2 text-sm border-b p-2 rounded">Пароль введен неправильно</p>
+
         <table v-show="isTableVisible"  class="w-full table-auto text-xs sm:text-sm">
          <thead>
            <tr class="bg-gray-200 text-gray-600 uppercase text-xs leading-normal">
@@ -112,8 +97,16 @@ const checkPassword = () => {
              <td class="py-3 px-6 ps-20 text-left">г</td>
              <td class="py-3 px-6 text-center">-----</td>
              <td class="py-3 px-6 text-center font-semibold">0,800</td>
+             
            </tr>
-
+           <tr>
+           <td class="font-bold">Филе Осетра без Шкуры разрезать на куски как на видио 
+           <div class="font-semibold text-red-600">Маринуем куски осетра в маринаде как написано в Рецепте , 
+            Связываем шпагатом и подвешиваем на кручки в холодильник .
+            Вялим 48 часов при температуре +4 градуса.
+            Усушка 10% . Продукта .
+           </div></td>
+           </tr>
          </tbody>
         </table>
         <div class="sm:w-1/3 p-4 w-full overflow-auto">
