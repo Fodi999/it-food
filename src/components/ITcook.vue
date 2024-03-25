@@ -1,9 +1,11 @@
  <script setup>
+import TablVueVue from "./TablVue.vue";
+
 
 </script>
  <template>
     <div>
-   
+      <TablVueVue />
         <div class="overflow-x-auto">
       <div class="min-w-screen min-h-screen flex items-center justify-center z-0 bg-gray-100 font-sans overflow-hidden">
         <div class="w-full lg:w-5/6 mt-[-100px]">
@@ -15,7 +17,7 @@
               <h3 class=" border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogITCook2') }}</h3>
               <p class="text-rose-600 font-semibold mb-2">{{ $t('blogITCook3') }}</p>
             </div>
-            
+          
     </div>
   </div>
 </div>
