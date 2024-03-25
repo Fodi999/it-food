@@ -16,7 +16,6 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "axios": "^1.6.7",
     "boxicons": "^2.1.4",
-    "chart.js": "^4.4.2",
     "html2canvas": "^1.4.1",
     "lodash": "^4.17.21",
     "vue": "^3.4.21",
